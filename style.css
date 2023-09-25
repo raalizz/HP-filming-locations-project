@@ -1,5 +1,31 @@
+:root {
+  --main-font: "Poppins", sans-serif;
+  --secondary-font: "Yusei Magic", sans-serif;
+}
+
 h3,
-h1 {
-  font-family: "Poppins", sans-serif;
+p {
+  font-family: var(--main-font);
   text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+h1 {
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-weight: 900;
+  font-size: 70px;
+  color: #fff;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/hogwarts.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 160px 0;
 }
