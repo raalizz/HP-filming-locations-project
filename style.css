@@ -1,9 +1,12 @@
 :root {
   --main-font: "Poppins", sans-serif;
+  --secondary-color: #bfd0cd;
 }
-
-header h2 {
+body {
   font-family: var(--main-font);
+  background-color: #64462e;
+}
+header h2 {
   text-align: center;
   color: #fff;
   font-size: 40px;
@@ -11,14 +14,13 @@ header h2 {
 }
 header h1 {
   text-align: center;
-  font-family: var(--main-font);
+
   font-weight: 900;
   font-size: 65px;
   color: #fff;
   line-height: 1;
 }
 header h3 {
-  font-family: var(--main-font);
   text-align: center;
   color: #fff;
   line-height: 1;
@@ -46,7 +48,60 @@ hr {
   margin: 0 auto;
 }
 
-@media (max-width: 900px) {
+section {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 50px 0 50px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer {
+  color: #fff;
+  background-image: linear-gradient(
+      rgba(100, 70, 46, 0.9),
+      rgba(100, 70, 46, 0.9)
+    ),
+    url(images/diagon-alley.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+footer p {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+}
+footer li {
+  list-style: none;
+  margin-left: -40px;
+}
+footer a {
+  color: #bfd0cd;
+  text-decoration: none;
+}
+.links {
+  color: #fff;
+}
+footer .links:hover {
+  text-decoration: underline;
+}
+.icons {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 0 7px;
+  transition: all 200ms ease-in-out;
+}
+.icons:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
