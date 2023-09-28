@@ -15,8 +15,10 @@ section {
 header h2 {
   text-align: center;
   color: #fff;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 header h1 {
   text-align: center;
