@@ -6,6 +6,12 @@ body {
   font-family: var(--main-font);
   background-color: #64462e;
 }
+section {
+  max-width: 1200px;
+  padding: 100px 50px 100px 50px;
+  margin: 0 auto;
+}
+
 header h2 {
   text-align: center;
   color: #fff;
@@ -29,8 +35,6 @@ header h3 {
 }
 
 header {
-  max-width: 1200px;
-  margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("images/hogwarts.jpeg");
   background-size: cover;
@@ -48,12 +52,48 @@ hr {
   margin: 0 auto;
 }
 
+main {
+  background-color: #fff;
+}
+main h2 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+main p {
+  font-size: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+main .grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 50px;
+}
+main img {
+  max-width: 100%;
+}
+
 footer .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding: 0 50px 0 50px;
+  grid-gap: 64px;
 }
+
 footer {
   color: #fff;
   background-image: linear-gradient(
@@ -64,7 +104,6 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0;
 }
 footer p {
   color: var(--secondary-color);
@@ -99,12 +138,12 @@ footer .icons:hover {
   transform: scale(1.2);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 900px) {
   header {
     padding: 60px 0;
   }
   header h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
   header h2 {
     font-size: 20px;
@@ -113,13 +152,32 @@ footer .icons:hover {
     font-size: 12.5px;
   }
   footer .grid {
-    display: block;
-    margin-top: -80px;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
   }
   footer .grid p {
     font-size: 15px;
   }
   footer .grid li {
     font-size: 15px;
+  }
+  main .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+  main img {
+    max-width: 100%;
+    height: auto;
+    margin-left: -20px;
+  }
+  main h2 {
+    font-size: 10px;
+  }
+
+  main h3 {
+    font-size: 20px;
+  }
+  section {
+    padding: 50px auto;
   }
 }
