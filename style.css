@@ -107,7 +107,7 @@ main img {
 .locations-card-wrapper {
   display: flex;
   overflow-x: scroll;
-  padding: 40px o;
+  padding: 40px 0;
 }
 .cards-section {
   background-color: #f8f8f8;
