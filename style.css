@@ -113,6 +113,7 @@ main img {
 .locations-grid {
   display: grid;
   grid-template-columns: repeat(15, 1fr);
+  grid-gap: 10px;
 }
 .card {
   background-color: #fff;
@@ -130,15 +131,17 @@ main img {
 button {
   display: block;
   margin: 0 auto;
-  color: #fff;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 13px;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 10px 100px;
   background-color: #ad835c;
   border-radius: 5px;
+}
+button a {
+  color: #fff;
   text-decoration: none;
 }
 button:hover {
