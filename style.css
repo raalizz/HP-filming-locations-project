@@ -9,7 +9,6 @@ body {
   background-color: #64462e;
 }
 section {
-  max-width: 1200px;
   padding: 100px 50px 100px 50px;
   margin: 0 auto;
 }
@@ -105,6 +104,11 @@ main img {
   max-width: 300px;
 }
 
+.locations-card-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  padding: 40px o;
+}
 .cards-section {
   background-color: #f8f8f8;
   text-align: center;
@@ -113,7 +117,7 @@ main img {
 .locations-grid {
   display: grid;
   grid-template-columns: repeat(15, 1fr);
-  grid-gap: 10px;
+  grid-gap: 16px;
 }
 .card {
   background-color: #fff;
