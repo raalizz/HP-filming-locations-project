@@ -256,10 +256,18 @@ footer .icons:hover {
   .md-screen-p-2 {
     line-height: 1.4;
   }
+
   .md-screen-h5 {
     margin-top: 1em;
   }
   .md-screen-h5-2 {
     margin-top: 2.3em;
+  }
+  .md-screen-h5-3 {
+    margin-top: 2.4rem;
+  }
+  .md-screen-h4 {
+    margin-top: -1.4em;
+    font-size: 14px;
   }
 }
