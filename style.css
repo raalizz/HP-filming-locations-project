@@ -258,6 +258,9 @@ footer .icons:hover {
   main h4 {
     font-size: 15px;
   }
+  main p {
+    opacity: 0.9;
+  }
   .md-screen-p {
     line-height: 1.2;
   }
