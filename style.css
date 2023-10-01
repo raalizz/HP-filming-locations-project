@@ -116,7 +116,7 @@ main img {
 
 .locations-grid {
   display: grid;
-  grid-template-columns: repeat(15, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-gap: 16px;
 }
 .card {
@@ -202,7 +202,7 @@ footer .icons:hover {
   transform: scale(1.2);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -246,5 +246,20 @@ footer .icons:hover {
   }
   button {
     padding: 16px;
+  }
+  main h4 {
+    font-size: 15px;
+  }
+  .md-screen-p {
+    line-height: 1.2;
+  }
+  .md-screen-p-2 {
+    line-height: 1.4;
+  }
+  .md-screen-h5 {
+    margin-top: 1em;
+  }
+  .md-screen-h5-2 {
+    margin-top: 2.3em;
   }
 }
